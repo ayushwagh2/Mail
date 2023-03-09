@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}My Django Project{% endblock %}</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-RyhhLaRyROlYfBQvJ0t0+efqakvvTNLHny8a5O9jCzgQqtciV7wNC5JjK5ETMk+tfnlvryDhcOLJzG1/7b2cQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-4E4lKjgXYsRJtnUVtE8PIA9XOeDeJDM0HzlpkjwUebI6U1JgQ2BVSlZXjCv7nPVIjzUhkx7aQjj+ffPJsjHDIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-9z2wwpoKj/1Gq94xSvSChm0FvlZOnYIhfspNLlf4x4rnKj7Xg/qcK5L5TY5MX5r5myhZyzwBZGQKjTRcB0C0eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-Tm5lIMZzvvSWbv2Q0f/sTAarX+vG1ydzthSKdG6iLUsOZQ2z3ACoNdzD8NvOzhig9X22/TVp0F7W8sF+ysa1Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
